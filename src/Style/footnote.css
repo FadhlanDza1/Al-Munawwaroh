@@ -1,0 +1,60 @@
+/* General Footnote Styles */
+.bg-footnote {
+  background: linear-gradient(to right, #3a6b42, #4caf50); /* Gradient from darker green to lighter green */
+  color: #ffffff; /* White text for contrast */
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Ensure full width */
+}
+
+.content-wrapper {
+  padding: 1rem; /* Add padding within the wrapper */
+  max-width: 1200px; /* Optional: Set a max-width for large screens */
+  margin: 0 auto; /* Center the wrapper */
+}
+
+.text-style h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.text-style p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.about-section, .contact-section {
+  padding: 1rem;
+}
+
+.contact-item {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.contact-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle background change on hover */
+  transform: scale(1.02); /* Slight zoom effect */
+}
+
+.contact-icon {
+  height: 30px; /* Standardize icon size */
+  width: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .text-style h5 {
+    font-size: 1.1rem;
+  }
+  
+  .text-style p {
+    font-size: 0.9rem;
+  }
+
+  .contact-icon {
+    height: 25px;
+  }
+}

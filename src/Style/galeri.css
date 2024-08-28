@@ -1,0 +1,73 @@
+/* Header styling */
+.gallery-header {
+  position: relative;
+  height: 400px; /* Adjust height as needed */
+  background-image: url('../Assets/Gallery/10.jpg'); /* Replace with your chosen background image */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+
+}
+
+.gallery-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); 
+  margin: 0;
+}
+
+/* Gallery container to center and add margins */
+.gallery-container {
+  margin-top: -2rem; /* Adjust based on header height */
+}
+
+/* Styling for gallery items */
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem; /* Margin between rows */
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Define dimensions for each size class */
+.gallery-item.small {
+  flex: 1 1 100%; /* Full-width for small images */
+  max-width: 200px;
+}
+
+.gallery-item.medium {
+  flex: 1 1 48%; /* Medium images in two columns */
+  max-width: 400px;
+}
+
+.gallery-item.large {
+  flex: 1 1 100%; /* Full-width for large images */
+  max-width: 800px;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+/* Responsive grid layout for gallery items */
+@media (max-width: 768px) {
+  .gallery-item.medium {
+    flex: 1 1 100%; /* Stack medium images in full width */
+  }
+}

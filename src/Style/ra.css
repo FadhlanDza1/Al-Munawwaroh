@@ -1,0 +1,89 @@
+/* Page header styling */
+.pg-header {
+  position: relative;
+  height: 400px; /* Adjust based on your design needs */
+  background-image: url('../Assets/kelas-bg.jpg'); /* Replace with your chosen background image */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  background-color: #343a40;
+}
+
+.pg-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+/* Background styling */
+.bg-pg {
+  background-color: #f8f9fa;
+  padding: 3rem 1rem;
+}
+
+/* Section styling */
+.pg-section {
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.pg-section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #343a40;
+}
+
+/* Styling for text */
+.text-align {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #343a40;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive image */
+.ra-img-fluid {
+  max-height: 700px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Add margin for various screens */
+@media (max-width: 768px) {
+  .pg-header {
+    height: 300px;
+  }
+  
+  .pg-title {
+    font-size: 2rem;
+  }
+}

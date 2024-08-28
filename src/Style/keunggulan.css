@@ -1,0 +1,51 @@
+/* keunggulan.css */
+.keunggulan-header {
+    position: relative;
+    height: 500px;
+    background-image: url('../Assets/aula.jpeg'); /* Ganti dengan gambar latar belakang yang sesuai */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding-top: 60px;
+}
+
+.keunggulan-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.keunggulan-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.keunggulan-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.keunggulan-item img {
+    max-height: 200px; /* Sesuaikan ukuran gambar */
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.keunggulan-item h3 {
+    color: #007bff; /* Warna utama, sesuaikan dengan warna navbar */
+}
+
+.keunggulan-item p {
+    color: #343a40;
+}
